@@ -1,38 +1,94 @@
-.App {
+.app-container {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  margin-top: 50px;
+}
+
+.team-list-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.team-list {
+  list-style: none;
+  padding: 0;
+}
+
+.team-item {
+  background-color: #f8f9fa;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  width: 200px;
+  text-align: center;
+  position: relative; /* Necessary for positioning the delete button */
+}
+
+.delete-button {
+  background-color: transparent;
+  color: #757575;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  right: -30px; /* Positions the 'X' slightly outside the list item */
+  transform: translateY(-50%);
+}
+
+.delete-button:hover {
+  color: #e60000; /* Changes the color when hovering */
+}
+
+.bracket-placeholder {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  border: 2px dashed #bbb;
+}
+
+.bracket-container {
+  margin-top: 40px;
+  padding: 20px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.bracket-round {
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.matchup {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-around;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  background-color: #f8f9fa;
+  width: 250px;
+  margin: 10px 0;
 }
 
-.App-link {
-  color: #61dafb;
+.team {
+  flex: 1;
+  font-weight: bold;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.vs {
+  flex: 0;
+  padding: 0 10px;
+  font-style: italic;
+  color: #555;
+}
+
+.next-round {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
 }
