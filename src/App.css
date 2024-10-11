@@ -1,94 +1,111 @@
+/* Container for the whole app */
 .app-container {
-  text-align: center;
-  font-family: Arial, sans-serif;
-  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  height: 100vh;
+  background-color: #f3f4f6; /* Light background */
+}
+
+/* Left side - Title and Input */
+h1 {
+  color: #ff69b4; /* Light pink for the title */
+  margin-bottom: 20px;
+}
+
+.left-side {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  padding: 10px;
+  width: 100%;
+  border: 2px solid #ff69b4;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px;
+  background-color: #ff69b4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #ff85c1;
+}
+
+/* Right side - Teams List */
+.right-side {
+  width: 40%;
 }
 
 .team-list-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
+  max-width: 100%;
 }
 
 .team-list {
-  list-style: none;
+  list-style-type: none;
   padding: 0;
 }
 
 .team-item {
-  background-color: #f8f9fa;
-  margin: 10px 0;
-  padding: 15px;
-  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
   border: 1px solid #ddd;
-  width: 200px;
-  text-align: center;
-  position: relative; /* Necessary for positioning the delete button */
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
 }
 
 .delete-button {
-  background-color: transparent;
-  color: #757575;
+  background-color: #ff69b4;
   border: none;
+  color: white;
+  border-radius: 5px;
   cursor: pointer;
-  font-size: 18px;
-  font-weight: bold;
-  position: absolute;
-  top: 50%;
-  right: -30px; /* Positions the 'X' slightly outside the list item */
-  transform: translateY(-50%);
+  transition: background-color 0.3s;
 }
 
 .delete-button:hover {
-  color: #e60000; /* Changes the color when hovering */
+  background-color: #ff85c1;
 }
 
-.bracket-placeholder {
-  margin-top: 40px;
-  padding: 20px;
-  background-color: #f0f0f0;
-  border-radius: 10px;
-  border: 2px dashed #bbb;
-}
-
+/* Bracket Container */
 .bracket-container {
-  margin-top: 40px;
-  padding: 20px;
-  text-align: center;
+  margin-top: 20px;
 }
 
 .bracket-round {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .matchup {
   display: flex;
-  align-items: center;
-  justify-content: space-around;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 10px;
-  background-color: #f8f9fa;
-  width: 250px;
-  margin: 10px 0;
+  justify-content: space-between;
+  margin-bottom: 10px;
 }
 
 .team {
-  flex: 1;
-  font-weight: bold;
+  width: 45%;
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-align: center;
 }
 
 .vs {
-  flex: 0;
-  padding: 0 10px;
-  font-style: italic;
-  color: #555;
-}
-
-.next-round {
-  margin-top: 30px;
-  display: flex;
-  justify-content: space-around;
+  width: 10%;
+  text-align: center;
+  font-weight: bold;
 }

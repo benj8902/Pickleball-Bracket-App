@@ -1,0 +1,35 @@
+/* Countdown timer styling */
+.countdown-container {
+    margin-top: 50px; /* Add some space above the countdown */
+    text-align: center; /* Center the text */
+  }
+  
+  /* Style for the countdown timer */
+  .countdown-timer {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center the content horizontally */
+    margin-top: 10px;
+  }
+  
+  /* Style for each time unit */
+  .time-unit {
+    display: flex;
+    flex-direction: column; /* Stack the label and value vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    margin: 0 10px; /* Add spacing between circles */
+    border: 1px solid #e57a9d; /* Pink border for breast cancer awareness */
+    border-radius: 50%; /* Make the borders circular */
+    width: 60px; /* Set width of the circles */
+    height: 60px; /* Set height of the circles */
+    background-color: rgba(241, 205, 217, 0.1); /* Light pink background */
+    padding: 10px; /* Add padding inside the circle */
+    font-size: 1.2rem; /* Adjust font size */
+  }
+  
+  /* Style for the label text */
+  .label {
+    font-size: 1rem; /* Smaller font size for labels */
+    color: #555; /* Gray color for labels */
+  }
+  
